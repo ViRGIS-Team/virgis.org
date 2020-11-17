@@ -1,8 +1,9 @@
-# ViRGIS
+# ViRGiS
 {: .bauhaus }
 
 
-## Virtual Reality GIS Platforn
+Virtual Reality GIS Platforn
+{: .fs-6 .bauhaus}
 
 
 ## Overview
@@ -20,19 +21,9 @@ In particular, it is intended to provide ALL of these three things :
 Many of these features are currently available in various packages and initiatives currently. As far as we know, no one has implemented all three together and dedicated to 3D GIS. This is the USP of this product.
 
 
-# Documentation
-
-Go to [Documentation](https://www.virgis.org/docs/manual/installation.html)
-
-
-
-# Getting ViRGIS
-
-See Distribution and ChangeLog
-
 
 # License
 
 ViRGIS is copyright [Runette Software Ltd](https://runette.co.uk) and it licensed under an MIT license (see [license](/LICENSE))
 
-# Contributing
+
