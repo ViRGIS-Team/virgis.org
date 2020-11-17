@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "ViRGiS Project"
-theme: "just-the-docs"
+remote_theme: pmarsceill/just-the-docs
 color_scheme: "virgis"
 logo: "/images/virgis_light.png"
 description: A Viritual Reality GIS system
