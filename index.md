@@ -1,19 +1,10 @@
 # ViRGIS Project
 
 
-## Virtual Reality GIS in Unity
+## Virtual Reality GIS Platforn
 
 
-- [ViRGIS Project](#virgis-project)
-- [Overview](#overview)
-- [Documentation](#documentation)
-- [Getting ViRGIS](#getting-virgis)
-- [Contributing](#contributing)
-- [License](#license)
-
-
-
-# Overview
+## Overview
 
 ViRGIS (**Vi**rtual **R**eality **G**eospatial **I**nformation **S**ystem) is intended to bring the GIS world into the VR world.
 
