@@ -1,4 +1,5 @@
-# ViRGIS Project
+# ViRGIS
+{: .bauhaus }
 
 
 ## Virtual Reality GIS Platforn
