@@ -2,7 +2,7 @@
 {: .bauhaus }
 
 
-Virtual Reality GIS Platforn
+Virtual Reality GIS Platform
 {: .fs-6 .bauhaus}
 
 

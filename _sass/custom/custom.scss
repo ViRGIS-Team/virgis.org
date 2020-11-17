@@ -3,6 +3,10 @@
     src:url("/Fonts/5683385/86d777be-ba3c-4a21-a94a-41b4f8ddd94b.woff2") format("woff2"),url("/Fonts/5683385/9c942d13-7269-478c-b12e-61ac23fc3e16.woff") format("woff");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
 .bauhaus {
     font-family: "Bauhaus_93 W05 Regular", sans-serif;
 }
+
+$body-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Quicksand', sans-serif !default;
