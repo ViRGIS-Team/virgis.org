@@ -1,4 +1,10 @@
-# Installation 
+---
+layout: virgis
+title: Installation
+nav_order: 2
+description: "ViRGiS Installation Instructions"
+permalink: /installation
+---
 
 # Basics
 
@@ -10,7 +16,7 @@ By default, the player expects to be next to a folder called `test-data` that co
 
 You can change the user experience and the player experience in your own applications by normal Unity development but it is not part of the core ViRGIS project to provide this user experience.
 
-## Versions
+# Versions
 
 There are two seperate code bases for ViRGIS
 
@@ -18,7 +24,7 @@ There are two seperate code bases for ViRGIS
 
 - ***Version 2*** has much more functionality and can access a wide range of file types but currently is only supported on Windows-x64 platforms - Rift VR and Windows Desktop.
 
-## Download
+# Download
 
 You can either :
 

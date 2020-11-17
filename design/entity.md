@@ -1,10 +1,17 @@
-# Virgis Entity Model
+---
+layout: virgis
+title: Entity Model
+nav_order: 2
+parent: Design Philosophy
+description: "ViRGiS Entity Descriptions"
+---
 
-## Conceptual Data Model
 
-The high level entity structure, in line wit standard GIS practice is based on the following model.
+# Conceptual Data Model
 
-![ConceptualModel](../images/conceptual_entity.png )
+The high level entity structure, in line with standard GIS practice is based on the following model.
+
+![ConceptualModel](/images/conceptual_entity.png )
 
 Where :
 
@@ -16,17 +23,14 @@ Where :
     *   All mean the same thing and came from the same source - e.g. a set of points each of which is a place where a rock sample was taken or an archeological pot was found OR a set of lines each of which is a fault line in the rock.
 
 
-## Logical Entity Model
+# Logical Entity Model
 
 The conceptual model is implement using the following model - again broadly in line with best practice.
 
 
-![alt_text](../images/logical_entity.png "image_tooltip")
-
+![alt_text](/images/logical_entity.png "image_tooltip")
 
 Where:
-
-
 
 *   FeatureCollection, Feature and Geometry are defined as per the definitions in GeoJSON ( see [https://tools.ietf.org/html/rfc7946](https://tools.ietf.org/html/rfc7946)) 
 *   A Unit is an atomic unit of Symbology define the size, shape, colour and offset position for one component of the feature(for instance lines or points)
@@ -34,20 +38,20 @@ Where:
 *   A RecordSet is the complete representation of a layer, and
 *   A Project is a complete representation of a model.
 
-[Unit](../api/Project.Unit.html), [RecordSet](../api/Project.RecordSet.html) and [Project](../api/Project.GisProject.html) are defined in the Scripting Reference.
+[Unit](/api/Project.Unit.html), [RecordSet](/api/Project.RecordSet.html) and [Project](/api/Project.GisProject.html) are defined in the Scripting Reference.
 
 
-## Current Implementation
+# Current Implementation
 
 The Logical Entity Model is implemented by two files and two types of GameObject, as follows
 
-![image](../images/physical_entity_1.png )
+![image](/images/physical_entity_1.png )
 
 
 Where the source is a reference to one GeoJSON file
 
 
-![image](../images/physical_entity_2.png )
+![image](/images/physical_entity_2.png )
 
 
 All Feature types implement the [IVirgisFeature](../api/Virgis.IVirgisFeature.html) interface and extend [VirgisFeature](../api/Virgis.VirgisFeature.html). There can be as many Feature types as there are types of geometry.

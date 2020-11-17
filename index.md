@@ -1,8 +1,11 @@
-# ViRGiS
-{: .bauhaus }
+---
+layout: virgis
+title: Home
+nav_order: 1
+description: "ViRGiS Overview"
+permalink: /
+---
 
-Virtual Reality GIS Platform
-{: .fs-6 .bauhaus}
 
 # Overview
 

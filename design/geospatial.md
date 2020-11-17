@@ -1,13 +1,19 @@
-# ​3D Geospatial Systems
+---
+layout: virgis
+title: 3D Geospatial Systems
+nav_order: 3
+parent: Design Philosophy
+description: "Discussion of the structure of GIS in 3D and VR"
+---
 
-## ​Purpose
+# ​Purpose
 
 The purpose of this section is to provide some background and discussion into the complications of 3D Geospatial Systems and the design decisions being made.
 
 Read this section to get a deeper understanding of the reasoning behind some of the design decisions made in the ViRGIS App.
 
 
-## ​Sources
+# ​Sources
 
 The following are some of the sources for this discussion
 
@@ -39,7 +45,7 @@ Kenneth Rose, Alla Sheffer, Jamie Wither, Marie-Paule Cani, Boris Thibert (2007)
 Boundaries. Available from https://hal.inria.fr/inria-00337445/document [accessed June 2020]
 
 
-## ​Some Terminology and Realms
+# ​Some Terminology and Realms
 
 **Real-World Space** - space defined by geographic coordinates and by real-world units (e.g. metres). This space is always projected and z-up.
 
@@ -56,7 +62,7 @@ Boundaries. Available from https://hal.inria.fr/inria-00337445/document [accesse
 **Data Coordinates** Each RecordSet has a Coordinate Reference System (CRS). This is usually a well-known CRS such as EPSG:4326. 
 
 
-## ​Geometry
+# ​Geometry
 
 ViRGIS creates a limited extent geodetically projected coordinate system in the VR Space, where the ellipsoid is represented as a planar datum. This tool is intended for limited extent GIS or Spatial analysis problems where the planar projection is not a problem. If an ellipsoid representation of the datum is required, this is not the tool.
 
@@ -65,13 +71,13 @@ This space can be zoomed - this changes the base relationship between VR Space u
 Real-world Points, Lines and Polygons etc are projected into this VR Space using standard projection techniques.
 
 
-## ​Basics - moving from 2D to 3D
+# ​Basics - moving from 2D to 3D
 
-### Coordinate systems don’t change. 
+## Coordinate systems don’t change. 
 
 We continue to use the same Coordinate Reference Systems and datums. With all of the same tools needed and problems associated.
 
-### Altitudes are not Always Altitudes
+## Altitudes are not Always Altitudes
 
 Z, or more traditionally Altitude, has always been used in GIS but has not been a core coordinate and as such the handling is less well defined. Z can be:
     1. Relative to the Ellipsoid,
@@ -83,7 +89,7 @@ In 2D GIS, in most cases Z is just a DEM (i.e. an attribute), so this did not ma
 
 In the VR World, all Z values from the Real-World Space are projected into Y values in the VR Space coordinate system relative to the ellipsoid. Thus, the Z values must be ellipsoid-height figures.
 
-### Points are Points
+## Points are Points
 
 A point (with Z value) is a simple 3D entity. No difference there.
 
@@ -95,7 +101,7 @@ There are some additional types of symbology. Using the experience quoted by QGI
 - Using 3D models (i.e. meshes) as 3D icons. This capability is practically OOTB with Unity, but providing the library of Icons and semantics to define them in the Project.json will take some time.
 - Billboards. I.e. 2D sprites that always face the viewer. Creating Text based Billboards is simple in Unity and will be used in ViRGIS V1 for labelling. Adding texture should not be complicated but has the same problem of library and semantics as b).
 
-### Lines remain Lines
+## Lines remain Lines
 
 A line is a set of points or vertices and, provided all vertices have a Z value, is a simple 3D entity although it should be noted for completeness that the length of the line measured in 3D may not be the same as the length of the line measured in 2D.
 
@@ -107,7 +113,7 @@ The symbology questions are primarily:
 
 As a note, the line segment is created by elongating the mesh along the z-axis in VR Space. That means the characteristics of the line symbology (i.e. cross section) are set by the X and Y values of the scale vector in VR Space. To keep consistency, the scaling is still written as a 3D transform in z-up format. This means that in the project.json file, the x and z values set the width and depth of the line. The y value should always be 1, since the y-value is created when drawing the line.
 
-### Polygons are difficult
+## Polygons are difficult
 
 As discussed in Tet-Khuan et al and elsewhere, Polygons are not actually 3D shapes and a number of assumptions have to be made:
 
@@ -135,7 +141,7 @@ For symbology, the mesh needs to be constructed from a material that is covered 
 
 One characteristic of a polygon over a mesh is the linear ring - which can take symbology as well. This allows the edges in a polygon mesh to be high-lighted. This is not simply possible in a standard Unity mesh.
 
-### Meshes are New
+## Meshes are New
 
 In the VR World, meshes become a very important feature type. Meshes are 2.xD surfaces made up of small planar polygons joined at the edges with a large number of vertices.
 
@@ -149,7 +155,7 @@ ViRGIS v1 assumes that, for meshes coming from “non-polygon” formats (e.g..O
 
 Each mesh definition file (which may contain one or more individual meshes) is created in the model as its own `RecordSet` object or GIS layer.
 
-### Point Clouds are New
+## Point Clouds are New
 
 A point cloud is a large set of 3D points each of which has attributes (e.g. colour) and together make up some structure. The key point here is the size of the dataset. 
 

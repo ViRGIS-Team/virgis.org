@@ -1,3 +1,13 @@
+$virgis-purple-000: #f4e4f6 !default;
+$virgis-purple-100: #9d41d5 !default;
+$virgis-purple-200: #6a00a3 !default;
+$virgis-purple-300: #360073 !default;
+
+$virgis-cyan-000: #def4f5 !default;
+$virgis-cyan-100: #60f2f2 !default;
+$virgis-cyan-200: #00bfbf !default;
+$virgis-cyan-300: #008e8f !default;
+
 @font-face{
     font-family:"Bauhaus_93 W05 Regular";
     src:url("/Fonts/5683385/86d777be-ba3c-4a21-a94a-41b4f8ddd94b.woff2") format("woff2"),url("/Fonts/5683385/9c942d13-7269-478c-b12e-61ac23fc3e16.woff") format("woff");
@@ -5,4 +15,21 @@
 
 .bauhaus {
     font-family: "Bauhaus_93 W05 Regular", sans-serif;
+    color: $virgis-purple-300;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+strong {
+    font-family: "Bauhaus_93 W05 Regular", sans-serif;
+}
+
+.side-bar {
+    background-color: $virgis-cyan-000;
+}
+
+a {
+    color: $virgis-cyan-300;
 }
