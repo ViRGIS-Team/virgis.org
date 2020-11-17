@@ -1,12 +1,10 @@
 # ViRGiS
 {: .bauhaus }
 
-
 Virtual Reality GIS Platform
 {: .fs-6 .bauhaus}
 
-
-## Overview
+# Overview
 
 ViRGIS (**Vi**rtual **R**eality **G**eospatial **I**nformation **S**ystem) is intended to bring the GIS world into the VR world.
 
