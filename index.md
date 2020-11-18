@@ -6,6 +6,7 @@ description: "ViRGiS Overview"
 permalink: /
 ---
 
+[Get started now](/installation){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/virgis-team/virgis_v2){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 # Overview
 
