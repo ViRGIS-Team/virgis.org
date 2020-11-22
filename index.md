@@ -8,6 +8,8 @@ permalink: /
 
 [Get started now](/installation){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/virgis-team/virgis_v2){: .btn .fs-5 .mb-4 .mb-md-0 }
 
+![Screenshot of ViRGiS](/images/virgis_landscape.png "Screenshot of a VR model")
+
 # Overview
 
 ViRGIS (**Vi**rtual **R**eality **G**eospatial **I**nformation **S**ystem) is intended to bring the GIS world into the VR world.
