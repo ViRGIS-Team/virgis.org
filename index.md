@@ -28,6 +28,6 @@ Many of these features are currently available in various packages and initiativ
 
 # License
 
-ViRGIS is copyright [Runette Software Ltd](https://runette.co.uk) and it licensed under an MIT license (see [license](/LICENSE))
+ViRGIS is copyright [Runette Software Ltd](https://runette.co.uk) and it licensed under an MIT license (see [license](https://github.com/virgis-team/virgis_v1/tree/main/LICENSE))
 
 
