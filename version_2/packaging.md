@@ -105,15 +105,16 @@ We do not provide a detailed recipe for creating a completely new project. We ha
     }
   ]
 ```
-5. Install platform dependent packages for the platform you want to run on. For instance, for the Oculus platform used in the dev project install the Oculus Unity Integration package from the Unity Asset store.
-6. If you want to include MapBox in the app, install the MapBox Unity SDK unitypackage as per the [MapBox documentation](https://www.mapbox.com/install/unity/). The will need to create an account and an SDK token if you do not have one already.
+5. Install the **ViRGIS** package as described above.
+6. Install platform dependent packages for the platform you want to run on. For instance, for the Oculus platform used in the dev project install the Oculus Unity Integration package from the Unity Asset store.
+7. If you want to include MapBox in the app, install the MapBox Unity SDK unitypackage as per the [MapBox documentation](https://www.mapbox.com/install/unity/). The will need to create an account and an SDK token if you do not have one already.
 > _Note that if you do NOT include MapBox in the project, you will need to create yor own version of the Project namespace excluding MapBox dependencies_
-7. There is a clash between MapBox and GDAL because they both contain a copy of sqlllite.dll. Delete the SQL native plugin in the MapBox folder.
-8. A fix needs to be applied to MapBox to make it work with URP. See [this article](http://barankahyaoglu.com/dev/mapbox-unity-sdk-with-urp/).
-9. For Mapbox to work, there needs to be a custom layer defined for MapBox and a prefab GameObject. See the dev project for examples.
-10. The abstract Map object in the prefab must have the `Use Relative Height` flag set.
-11. You will need to create a map container to contain the GIS artfacts. This should be an empty GO with a component attached that is an extension of the `Virgis.MapInitialise` class with the logic added to allocate layer objects to RecordSet entities. See the dev project for an example.
-12. You will need to create the UI. **ViRGiS** provides some prefabs and methods to help with this, including:
+8. There is a clash between MapBox and GDAL because they both contain a copy of sqlllite.dll. Delete the SQL native plugin in the MapBox folder.
+9. A fix needs to be applied to MapBox to make it work with URP. See [this article](http://barankahyaoglu.com/dev/mapbox-unity-sdk-with-urp/).
+10. For Mapbox to work, there needs to be a custom layer defined for MapBox and a prefab GameObject. See the dev project for examples.
+11. The abstract Map object in the prefab must have the `Use Relative Height` flag set.
+12. You will need to create a map container to contain the GIS artfacts. This should be an empty GO with a component attached that is an extension of the `Virgis.MapInitialise` class with the logic added to allocate layer objects to RecordSet entities. See the dev project for an example.
+13. You will need to create the UI. **ViRGiS** provides some prefabs and methods to help with this, including:
 
 - Menus
 - Head Up Display
