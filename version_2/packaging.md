@@ -113,7 +113,7 @@ We do not provide a detailed recipe for creating a completely new project. We ha
 9. A fix needs to be applied to MapBox to make it work with URP. See [this article](http://barankahyaoglu.com/dev/mapbox-unity-sdk-with-urp/).
 10. For Mapbox to work, there needs to be a custom layer defined for MapBox and a prefab GameObject. See the dev project for examples.
 11. The abstract Map object in the prefab must have the `Use Relative Height` flag set.
-12. You will need to create a map container to contain the GIS artfacts. This should be an empty GO with a component attached that is an extension of the `Virgis.MapInitialise` class with the logic added to allocate layer objects to RecordSet entities. See the dev project for an example.
+12. You will need to create a map container to contain the GIS artfacts. This should be an empty GO with a component attached that is an extension of the [`Virgis.MapInitialise`](https://virgis-team.github.io/ViRGiS_v2/api/Virgis.MapInitialize.html) class with the logic added to allocate layer objects to RecordSet entities. See the dev project for an example.
 13. You will need to create the UI. **ViRGiS** provides some prefabs and methods to help with this, including:
 
 - Menus
